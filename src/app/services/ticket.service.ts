@@ -7,7 +7,8 @@ import { Observable, Subject, BehaviorSubject } from 'rxjs';
 })
 export class TicketService {
 
-  private apiUrl = 'http://localhost:3000/tickets';
+  // URL del backend desplegado en Render
+  private apiUrl = 'https://helpdesk-backend-wro5.onrender.com/tickets';
 
   private actualizarListaSubject = new Subject<void>();
   actualizarLista$ = this.actualizarListaSubject.asObservable();
